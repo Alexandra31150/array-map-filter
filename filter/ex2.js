@@ -24,9 +24,19 @@ Expected OUTPUT for this sample:
   ['Bran Stark', 'Arya Stark', 'Sansa Stark']
 
 */
+const names = [
+  'Bran Stark',
+  'Cersei Lannister',
+  'Sandor Clegane',
+  'Arya Stark',
+  'Yara Greyjoy',
+  'Sansa Stark',
+];
 
 function keepStarks(names) {
+  return names.filter(names => names.endsWith('Stark'));
 }
+console.log(keepStarks(names));
 
 // DON'T TOUCH THIS!
 module.exports = keepStarks;
