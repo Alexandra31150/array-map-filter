@@ -27,7 +27,15 @@ Expected OUTPUT for this sample array:
 */
 
 function getStringsLength(strings) {
+  return strings.map(function(animal) {
+    return animal + ' contains ' + animal.length + ' characters';
+  });
 }
+
+// console.log(getStringsLength(['Cat', 'Lion', 'Tiger', 'Jaguar', 'Leopard']));
+
+// compter le nombre de caractères
+// afficher " 'nom de str' + contains + 'nb de caracteres' + characters "
 
 // If you need, you can always visualize the result with a console.log.
 // In that case, uncomment the line below (you can also add your own

@@ -43,9 +43,17 @@ Expected OUTPUT for this sample
 */
 
 function getFoodCategories(foods) {
+  return foods.map(aliment => {
+    if (aliment.isVegetarian === true) {
+      return `(aliment.foods) is suitable for vegetarians`;
+    } else {
+      return `(aliment.foods) is not suitable for vegetarians`;
+    }
+  });
 }
 
-
+// si isVegetarian === true il faut retourner ....
+// sinon retourner ...
 
 // DON'T TOUCH THIS!
 module.exports = getFoodCategories;
